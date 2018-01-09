@@ -14,10 +14,11 @@ h1 {
 
 a {
     text-decoration: none;
+    color: red;
 }
 
 p {
-    padding: 0 5% 0 5%;
+    padding: 0px;
 }
 
 hr {
@@ -36,9 +37,21 @@ body {
     margin: 0px;
 }
 
+
+/* ======= */
+
 .center {
     text-align: center;
+    padding: 5% 5% 5%;
+    overflow: auto;
 }
+
+ul {
+    padding-left: 0px;
+}
+
+
+/* ======= */
 
 a {
     text-decoration: none;
@@ -63,9 +76,6 @@ button:hover {
 
 
 /* end base */
-
-
-/* products */
 
 .col-1 {
     width: 8.33%;
@@ -115,32 +125,6 @@ button:hover {
     width: 100%;
 }
 
-.work {
-    background-color: rgb(211, 205, 205);
-    padding: 5% 5% 5%;
-    overflow: auto;
-}
-
-.work-img {
-    height: 400px;
-    background-color: gray;
-    float: left;
-}
-
-.work-detail {
-    float: right;
-    height: 400px;
-    font-size: 16px;
-    text-align: left;
-}
-
-.work-detail h3 {
-    display: inline;
-}
-
-
-/* end products*/
-
 
 /* layout */
 
@@ -152,53 +136,30 @@ button:hover {
     margin: 25px 45px 25px 45px;
 }
 
-.logo b {
+.logo {
     font-size: 34px;
 }
 
 .menu {
     float: right;
-}
-
-.menu ul {
-    display: inline;
-}
-
-.menu ul li {
-    margin: 10px 15px 10px 0px;
-}
-
-.menu ul li a {
     color: grey;
 }
 
-.menu ul li a:hover {
+.menu-left {
+    margin: 10px 15px 10px 0px;
+    color: grey;
+}
+
+.menu-left:hover {
     border-bottom: 3px solid red;
 }
 
-.menu>a {
+.menu-right {
     border: 2px solid red;
-    padding: 1.2%;
+    padding: 17px;
+    width: 150px;
     border-radius: 25px;
     color: grey;
-}
-
-@media only screen and (max-width: 768px)   and (max-width: 1024px)  {
-    .work-detail {
-        width: 100%; 
-        float: none;
-    }
-    .work-detail-1 {
-        width: 50%; 
-        float: left;
-    }
-    .work-detail-2 {
-        width: 50%; 
-        float: right;
-    }
-    .work-img {
-        width: 100%;
-    }
 }
 
 
@@ -209,7 +170,6 @@ button:hover {
 
 .l-content {
     padding: 10% 0 10% 0;
-    height: 400px;
     color: #ffffff;
     background-color: grey;
     font-size: 30px;
@@ -225,10 +185,236 @@ button:hover {
 /* end content*/
 
 
-/* product */
+/* plans */
+
+.l-plans {
+    background-color: rgb(198, 255, 255);
+    overflow: auto;
+}
+
+.catolog-border {
+    padding: 4%;
+    float: left;
+    overflow: auto;
+}
+
+.catolog-border-plan {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 2px #888888;
+    overflow: auto;
+    padding: 4%;
+}
+
+.catolog-border-plan-cost {
+    font-size: 40px;
+}
+
+.catolog-border-plan-unit {
+    font-size: 18px;
+}
+
+.catolog-border-button {
+    color: #ffffff;
+    border-color: rgb(101, 238, 238);
+    background-color: rgb(101, 238, 238);
+    border-radius: 5px;
+    border-style: solid;
+}
+
+
+/* end plans*/
+
+
+/* products */
+
+.l-products {
+    text-align: center;
+}
+
+.work {
+    background-color: rgb(211, 205, 205);
+    overflow: auto;
+}
+
+.work-img {
+    height: 400px;
+    background-color: rgb(199, 184, 184);
+    float: left;
+}
+
+.work-detail {
+    float: right;
+    height: 400px;
+    font-size: 16px;
+    text-align: left;
+    padding: 2% 8% 2% 10%;
+}
 
 
 /* end products*/
+
+
+/* services*/
+
+.service-border {
+    padding: 2%;
+    float: left;
+    overflow: inherit;
+}
+
+.service-border-icon-left {
+    float: left;
+}
+
+.service-btn {
+    color: #ffffff;
+    border-color: rgb(101, 238, 238);
+    background-color: rgb(101, 238, 238);
+    border-radius: 5px;
+    border-style: solid;
+}
+
+
+/* end services*/
+
+
+/* team*/
+
+.l-team {
+    background-color: rgb(217, 248, 248);
+    overflow: auto;
+}
+
+.team-border {
+    padding: 2% 5% 2% 5%;
+    float: left;
+    position: relative;
+}
+
+.team-border-member {
+    background-color: #ffffff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5% 15% 5% 15%;
+}
+
+.team-border-member-name {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 28px;
+}
+
+.team-border-picture {
+    background: linear-gradient(to bottom, rgb(217, 248, 248) 50%, #ffffff 50%);
+}
+
+.team-border-picture-member {
+    background-color: gray;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    border: 10px solid rgb(217, 248, 248);
+    top: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* end team*/
+
+
+/* footer*/
+
+.l-footer {
+    background-color: rgb(18, 60, 114);
+    color: #ffffff;
+    overflow: auto;
+}
+
+.infor {
+    float: left;
+    text-align: left;
+}
+
+.infor-left {
+    margin-left: 0%;
+    padding-left: 0%;
+}
+
+.infor-title {
+    font-size: 28px;
+    margin: 0%;
+}
+
+.infor-input {
+    background-color: rgb(38, 85, 148);
+    border: none;
+    width: 100%;
+    margin: 2% 0% 2% 0%;
+    color: #ffffff;
+}
+
+.infor-input::-webkit-input-placeholder {
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+.infor-input-text {
+    height: 25px;
+}
+
+
+/* end footer*/
+
+@media only screen and (max-width: 991px) {
+    .work-detail {
+        width: 100%;
+        float: none;
+    }
+    .work-detail-1 {
+        width: 50%;
+        float: left;
+    }
+    .work-detail-2 {
+        width: 50%;
+        float: right;
+    }
+    .work-img {
+        width: 100%;
+    }
+    .catolog-border {
+        width: 50%;
+    }
+    .service-border {
+        width: 50%;
+    }
+    .service-border-5 {
+        width: 100%;
+    }
+    .service-border-6 {
+        width: 100%;
+    }
+    .team-border {
+        width: 50%;
+    }
+    .team-border-last {
+        width: 50%;
+        left: 52%;
+        margin-left: -15em;
+        /*set to a negative number 1/2 of your width*/
+    }
+    .infor-about {
+        width: 50%;
+    }
+    .infor-adress {
+        width: 50%;
+    }
+    .infor-mail {
+        width: 100%;
+    }
+}
 
 
 /* end layout*/
